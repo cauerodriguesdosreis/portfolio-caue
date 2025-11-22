@@ -1,0 +1,51 @@
+/* RESET MODERNO SEGURO — NÃO ALTERA TEXTOS NEM NAVBAR */
+
+/* Remove margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mantém cores dos elementos intactas */
+html, body {
+    height: 100%;
+}
+
+/* Tipografia */
+body {
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000; /* ajuste depois */
+}
+
+/* Remove bullets das listas */
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* Links sem sublinhado */
+a {
+    text-decoration: none;
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* NÃO resetamos buttons completamente para não quebrar nav */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+/* Inputs */
+input, textarea, select {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}

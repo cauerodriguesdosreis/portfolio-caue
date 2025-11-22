@@ -1,0 +1,171 @@
+@import url('../assets/styles/global.css');
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #fff;
+    background: radial-gradient(circle at center,
+        #0036c7 0%,
+        #001b55 45%,
+        #000820 100%
+    );
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width:  90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.navbar {
+    width: 100%;
+    padding: 25px 40px;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;  
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.3s;
+      list-style: none;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    margin: 20px 0 40px;
+    font-size: 4.2rem;
+    color: var(--accent-start);
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background: #6a4cff;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #4f35c8;
+}
+
+/* ===== SECTIONS ===== */
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.section-text {
+    max-width: 700px;
+}
+
+/* ===== PROJETOS ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid #6a4cff;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #6a4cff;
+}
+
+/* ===== PROCESSO ===== */
+.process-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.process-item {
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+/* ===== CONTATO ===== */
+.contato p {
+    font-size: 1.1rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 70px;
+}
